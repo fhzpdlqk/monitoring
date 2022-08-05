@@ -113,7 +113,7 @@ data:
     
       - job_name: 'scheduler'
         static_configs:
-          - targets: ['scheduler.monitoring.svc.cluster.local:5000/']
+          - targets: ['scheduler.monitoring.svc.cluster.local:5000']
     
       - job_name: 'kubernetes-cadvisor'
         scheme: https
