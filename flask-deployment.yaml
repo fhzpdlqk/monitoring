@@ -15,7 +15,7 @@ spec:
         app: scheduler
     spec:
       containers:
-      - image: aimmopostregistry.azurecr.io/promescheduler:v1
+      - image: aimmopostregistry.azurecr.io/promescheduler:latest
         name: scheduler
         ports:
         - containerPort: 5000
