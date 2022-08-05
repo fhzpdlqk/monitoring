@@ -109,7 +109,9 @@ data:
       - job_name: 'kube-state-metrics'
         static_configs:
           - targets: ['kube-state-metrics.kube-system.svc.cluster.local:8080']
-
+      - job_name: 'scheduler'
+        static_configs:
+          - targets: ['scheduler.monitoring.svc.cluster.local:5000/metrics-gauge']
       - job_name: 'kubernetes-cadvisor'
 
         scheme: https
