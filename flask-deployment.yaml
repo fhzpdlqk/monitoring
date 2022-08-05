@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scheduler
+  namespace: monitoring
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: scheduler
+  template:
+    metadata:
+      labels:
+        app: scheduler
+    spec:
+      containers:
+      - image: aimmopostregistry.azurecr.io/promescheduler:v1
+        name: scheduler
+        ports:
+        - containerPort: 5000
