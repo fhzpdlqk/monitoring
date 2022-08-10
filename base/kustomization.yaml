@@ -1,7 +1,7 @@
 resources:
 - flask-deployment.yaml
 - kube-state-cluster-role.yaml
-- kube-state-deployement.yaml
+- kube-state-deployment.yaml
 - kube-state-svc.yaml
 - kube-state-svcaccount.yaml
 - prometheus-cluster-role.yaml
