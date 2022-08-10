@@ -1,4 +1,13 @@
 resources:
 - flask-deployment.yaml
+- kube-state-cluster-role.yaml
+- kube-state-deployement.yaml
+- kube-state-svc.yaml
+- kube-state-svcaccount.yaml
+- prometheus-cluster-role.yaml
+- prometheus-config-map.yaml
+- prometheus-deployment.yaml
+- prometheus-node-exporter.yaml
+- prometheus-svc.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
