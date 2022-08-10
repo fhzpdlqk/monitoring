@@ -30,8 +30,8 @@ data:
           summary: High Cpu Usage
   prometheus.yml: |-
     global:
-      scrape_interval: 5s
-      evaluation_interval: 5s
+      scrape_interval: 30s
+      evaluation_interval: 30s
     rule_files:
       - /etc/prometheus/prometheus.rules
     alerting:
