@@ -4,7 +4,7 @@ resources:
 - ../../base
 images:
 - name: aimmopostregistry.azurecr.io/promescheduler
-  newTag: c8f0ae035256de13f5334cc6d18096923eb9c109
+  newTag: 7d7c390af83a09d95cf4e3e89732da73df891fa3
 - name: promescheduler-image
   newName: aimmopostregistry.azurecr.io/promescheduler
   newTag: v1
