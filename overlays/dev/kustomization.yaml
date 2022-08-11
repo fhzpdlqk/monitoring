@@ -3,8 +3,9 @@ kind: Kustomization
 resources:
 - ../../base
 images:
-- name: aimmopostregistry.azurecr.io/promescheduler
-  newTag: ef0edbf0c0ce92a91fa620371d7f6bd90b7b1afb
 - name: promescheduler-image
   newName: aimmopostregistry.azurecr.io/promescheduler
-  newTag: v1
+  newTag: ef0edbf0c0ce92a91fa620371d7f6bd90b7b1afb
+- name: aimmopostregistry.azurecr.io/promescheduler
+  newTag: latest
+
